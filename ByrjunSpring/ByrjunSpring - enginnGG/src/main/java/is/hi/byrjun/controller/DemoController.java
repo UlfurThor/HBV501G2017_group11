@@ -67,8 +67,7 @@ public class DemoController {
      */
     @RequestMapping("/start")
     public String start() {
-        return "demo/start"; // skilar .jsp skrá sem er /webapp/WEB-INF/vefvidmot/demo/demo.jsp
-        // skoðið application.properties til að sjá hvernig slóðin er sett
+        return "demo/start";
     }
 
 }
