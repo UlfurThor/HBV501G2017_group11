@@ -6,6 +6,7 @@
 package is.hi.hbv501.autum2017.g11.rentServ.start.SpringProject02.userData;
 
 import java.util.Calendar;
+import java.util.Locale;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -49,7 +50,7 @@ public class UserTest {
         String result = instance.getId();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -62,7 +63,7 @@ public class UserTest {
         User instance = new User();
         instance.setId(id);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -72,11 +73,11 @@ public class UserTest {
     public void testGetFirstName() {
         System.out.println("getFirstName");
         User instance = new User();
-        String expResult = "";
+        String expResult = "Bob";
         String result = instance.getFirstName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -89,7 +90,7 @@ public class UserTest {
         User instance = new User();
         instance.setFirstName(firstName);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -99,11 +100,11 @@ public class UserTest {
     public void testGetLastName() {
         System.out.println("getLastName");
         User instance = new User();
-        String expResult = "";
+        String expResult = "Jones";
         String result = instance.getLastName();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -116,7 +117,7 @@ public class UserTest {
         User instance = new User();
         instance.setLastName(lastName);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -126,11 +127,11 @@ public class UserTest {
     public void testGetBirthday() {
         System.out.println("getBirthday");
         User instance = new User();
-        Calendar expResult = null;
+        Calendar expResult = Calendar.getInstance(Locale.US);
         Calendar result = instance.getBirthday();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
 
     /**
@@ -143,7 +144,7 @@ public class UserTest {
         User instance = new User();
         instance.setBirthday(birthday);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        //fail("The test case is a prototype.");
     }
     
 }
