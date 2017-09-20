@@ -13,10 +13,22 @@ public class Car {
     private String id;
     
     private String model;
-    private CarClass carClass;
+    private CarType carType;
     private int numberOfDoors;
     
     private User owner;
+    
+    public Car(){}
+    public Car(String id, String model, CarType carType, int numberOfDoors, User owner){
+        this.id = id;
+        this.model = model;
+        
+        this.model = model;
+        this.numberOfDoors = numberOfDoors;
+        this.numberOfDoors = numberOfDoors;
+        this.owner = owner;
+        
+    }
 
     public String getId() {
         return id;
@@ -34,12 +46,12 @@ public class Car {
         this.model = model;
     }
 
-    public CarClass getCarClass() {
-        return carClass;
+    public CarType getCarType() {
+        return carType;
     }
 
-    public void setCarClass(CarClass carClass) {
-        this.carClass = carClass;
+    public void setCarType(CarType carType) {
+        this.carType = carType;
     }
 
     public int getNumberOfDoors() {

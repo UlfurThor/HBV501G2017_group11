@@ -17,8 +17,9 @@ public class RentalOffer {
     Car car;
     Date startDate;
     Date endDate;
-    
-    public RentalOffer(){}
+
+    public RentalOffer() {
+    }
 
     public Car getCar() {
         return car;
@@ -44,7 +45,14 @@ public class RentalOffer {
         this.endDate = endDate;
     }
 
-    
-    
-    
+    @Override
+    public String toString() {
+        String s = "";
+        s += this.car.toString() + ",";
+        s += this.startDate.toString() + ",";
+        s += this.endDate.toString() + ";";
+        
+        return "";
+    }
+
 }

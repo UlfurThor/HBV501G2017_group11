@@ -13,13 +13,12 @@ import java.util.List;
  * @author ulfur
  */
 public class RentalOffers {
+
     ArrayList<RentalOffer> rentals;
 
     public RentalOffers() {
         rentals = new ArrayList<RentalOffer>();
     }
-    
-    
 
     List<RentalOffer> GetAllOffers() {
         return rentals;
@@ -27,5 +26,14 @@ public class RentalOffers {
 
     void add(RentalOffer offer) {
         rentals.add(offer);
+    }
+
+    @Override
+    public String toString() {
+        String toString = "";
+        for (RentalOffer rental : rentals) {
+            toString+=rental.toString()+":";
+        }
+        return toString;
     }
 }

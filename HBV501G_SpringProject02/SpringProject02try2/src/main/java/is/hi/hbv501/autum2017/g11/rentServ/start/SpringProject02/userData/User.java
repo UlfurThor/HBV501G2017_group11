@@ -20,17 +20,30 @@ public class User {
     private String firstName;
     private String lastName;
 
-    private Calendar birthday;
+    private Date birthday;
 
     public User() {
 
         this.id = "aaa";
         this.firstName = "Bob";
         this.lastName = "Jones";
-        
-        this.birthday = Calendar.getInstance(Locale.US);
-        
 
+        this.birthday = new Date(90, 02, 07);
+
+    }
+
+    public User(User user) {
+        this.id = user.getId();
+        this.firstName = user.getFirstName();
+        this.lastName = user.getLastName();
+        this.birthday = user.getBirthday();
+    }
+
+    public User(String id, String firstName, String lastName, Date birthday) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
     }
 
     public String getId() {
@@ -57,11 +70,11 @@ public class User {
         this.lastName = lastName;
     }
 
-    public Calendar getBirthday() {
+    public Date getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Calendar birthday) {
+    public void setBirthday(Date birthday) {
         this.birthday = birthday;
     }
 

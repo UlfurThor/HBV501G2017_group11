@@ -9,7 +9,7 @@ package is.hi.hbv501.autum2017.g11.rentServ.start.SpringProject02.userData;
  *
  * @author ulfur
  */
-public enum CarClass {
+public enum CarType {
     Hatchback,
     Sedan,
     SUV,

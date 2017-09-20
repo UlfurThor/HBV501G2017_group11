@@ -5,7 +5,7 @@
  */
 package is.hi.hbv501.autum2017.g11.rentServ.start.SpringProject02.rentalData;
 
-import is.hi.hbv501.autum2017.g11.rentServ.start.SpringProject02.userData.CarClass;
+import is.hi.hbv501.autum2017.g11.rentServ.start.SpringProject02.userData.CarType;
 import java.util.Date;
 
 /**
@@ -14,12 +14,12 @@ import java.util.Date;
  */
 public class RentalSearch {
     
-    static RentalOffers searchCar(Date startDate, Date endDAte, CarClass carClass, RentalOffers offers){
+    static RentalOffers searchCar(Date startDate, Date endDate, CarType carType, RentalOffers offers){
         RentalOffers rentals = new RentalOffers();
         for (RentalOffer offer : offers.GetAllOffers()) {
             if (offer.getStartDate().after(startDate)
-                    && offer.getEndDate().before(endDAte)
-                    && offer.getCar().getCarClass()==carClass) {
+                    && offer.getEndDate().before(endDate)
+                    && offer.getCar().getCarType()==carType) {
                 rentals.add(offer);
             }
         }
