@@ -11,7 +11,7 @@ import is.hi.hbv501.autum2017.g11.rentServ.start.SpringProject02.userData.CarTyp
 import java.util.ArrayList;
 
 /**
- *
+ * Contains testdata for cars
  * @author ulfur
  */
 public class CarRepo {

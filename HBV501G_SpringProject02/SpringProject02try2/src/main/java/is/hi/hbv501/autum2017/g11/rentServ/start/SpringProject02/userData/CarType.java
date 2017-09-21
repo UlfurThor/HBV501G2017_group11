@@ -6,7 +6,7 @@
 package is.hi.hbv501.autum2017.g11.rentServ.start.SpringProject02.userData;
 
 /**
- *
+ * Enum for types of car
  * @author ulfur
  */
 public enum CarType {

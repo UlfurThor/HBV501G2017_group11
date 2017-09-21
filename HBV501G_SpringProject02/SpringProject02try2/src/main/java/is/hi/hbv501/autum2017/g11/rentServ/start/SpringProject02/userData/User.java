@@ -24,11 +24,11 @@ public class User {
 
     public User() {
 
-        this.id = "aaa";
-        this.firstName = "Bob";
-        this.lastName = "Jones";
+        this.id = "";
+        this.firstName = "";
+        this.lastName = "";
 
-        this.birthday = new Date(90, 02, 07);
+        this.birthday = null;
 
     }
 
@@ -76,6 +76,14 @@ public class User {
 
     public void setBirthday(Date birthday) {
         this.birthday = birthday;
+    }
+
+    /**
+     * returns formated html string for user
+     * @return 
+     */
+    public String toHTML() {
+        return "ID:" +this.id+", FirstName:" +this.firstName+", LastName: "+this.lastName;
     }
 
 }

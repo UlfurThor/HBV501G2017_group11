@@ -9,32 +9,30 @@ import is.hi.hbv501.autum2017.g11.rentServ.start.SpringProject02.userData.*;
 import java.util.Date;
 
 /**
+ * Data for rental
  *
  * @author ulfur
  */
 public class Rental {
 
-    
-
-    private RentalOffer offer;
     private User renter;
     private Date startDate;
     private Date endDate;
-    
+    private Car car;
 
     public Rental() {
-        offer = null;
+
         renter = null;
         startDate = null;
         endDate = null;
+        car = null;
     }
 
-    public RentalOffer getOffer() {
-        return offer;
-    }
-
-    public void setOffer(RentalOffer offer) {
-        this.offer = offer;
+    public Rental(User renter, Car car, Date startDate, Date enddate) {
+        this.renter = renter;
+        this.car = car;
+        this.startDate = startDate;
+        this.endDate = enddate;
     }
 
     public User getRenter() {
@@ -59,5 +57,18 @@ public class Rental {
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
+    }
+
+    /**
+     * returns a formated html string for a rental
+     *
+     * @return
+     */
+    public String toHTML() {
+        return "Renter:[" + this.renter.toHTML() + "], Car:[" + this.car.toHTML() + "], StartDate:" + this.startDate.toString() + ", EndDate:" + this.endDate.toString();
+    }
+
+    public Car getCar() {
+        return car;
     }
 }
